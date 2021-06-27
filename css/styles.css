@@ -68,7 +68,7 @@ body {
 .header{
     padding-top: 24px;
     padding-bottom: 25px;
-    border: 1px solid #ECECEC
+    border-bottom: 1px solid #ECECEC
 }
 
 .header-nav{
@@ -93,8 +93,7 @@ body {
 
 .header-list{
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px
+  
 }
 
 .header-list-item:not(:last-child){
@@ -124,11 +123,10 @@ body {
     display: flex;
     align-items: center;
     margin-left: auto;
-    padding-top: 32px;
-    padding-bottom: 32px
+    
 }
 
-.mail-link{
+.header-contact-list:not(:last-child){
     margin-right: 50px;    
 }
 
@@ -143,8 +141,7 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--desc-text-color);
-    text-decoration: none;
-  
+    text-decoration: none;  
 }
 
 .header-list,
@@ -211,18 +208,16 @@ body {
 
 /*=========Advantage description====*/
 
-.description-advantage-container {
-    display: flex;
-    align-items: center;
+.description-advantages{
     padding-bottom: 47px;
     padding-top: 94px;
-    
+
 }
 
 .advantages-list{
-    display: flex;
-    align-items: center; 
+    display: flex;     
     list-style-type: none;
+    justify-content: center;
 }
 
 .adv-list-desc:not(:last-child){
@@ -317,14 +312,19 @@ body {
     border-radius: 0px 0px 4px 4px;
     background: #FFFFFF;
 }
+
+.team-descr-container{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .team-name{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--link-title-text-color);
-    margin-top: 30px;
+    color: var(--link-title-text-color);   
 }
 
 .team-function{
@@ -334,15 +334,12 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--desc-text-color);
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 10px;   
 }
 
 
-  
-
-
 /*=========Our Team END=================*/
+
 
 
 /*=========MAIN END=================*/
@@ -359,20 +356,20 @@ body {
 
 .footer-logo{
     margin-top: 60px;
+    margin-bottom: 20px;
 }
 
 .footer-logo-studio{
     color: white;
 }
 
-.footer-address-list{
-    margin-top: 9px;
-}
 .footer-address-list-link{
-    list-style-type: none;
-  
+    list-style-type: none;  
 }
 
+.footer-address-list-link:not(:last-child){
+    margin-bottom: 9px;
+}
 
 .footer-address-desc {
     font-family: var(--main-font);
@@ -417,8 +414,9 @@ body {
 
 /*=========Portfolio HERO=============*/
 
-.hero-container{
+.hero-img-container{
     padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .hero-list {
@@ -426,6 +424,9 @@ body {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+    flex-basis: calc( (100% - 40px) / 5);
 }
 .hero-button-desc:hover,
 .hero-button-desc:focus{
@@ -434,22 +435,11 @@ body {
    
 }
 
-.hero-list{
-    justify-content: center;
-    margin-left: -8px;
-    margin-top: -8px;
-    flex-basis: calc( (100% - 40px) / 5);
-}
-
-.hero-button{
-    margin-left: 8px;
-    margin-top: 8px;
-    margin-bottom: 34px;
-    
+.hero-button:not(:last-child){
+    margin-right: 8px;    
 }   
 
-.hero-button-desc{
-   
+.hero-button-desc{   
     font-family: var(--main-font);
     font-weight: 500;
     font-size: 16px;
@@ -461,6 +451,7 @@ body {
     background: #F5F4FA;
     border-radius: 4px;
     border: none;
+    padding: 6px 22px;
 }
 /*=========Portfolio HERO END=============*/
 
@@ -487,14 +478,20 @@ body {
    
 }
 
+.img-list-container{
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+}
+
+
 
 .img-link-title {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--link-title-text-color);
-    margin-top: 20px;
-    margin-left: 24px;
+    
 }
 
 .img-link-subtitle{
@@ -504,8 +501,7 @@ body {
     letter-spacing: 0.03em;
     color: var(--desc-text-color);
     margin-top: 4px;
-    margin-left: 24px;
-    margin-bottom: 20px;
+    
 }
 /*=========Image Links END=============*/
 
