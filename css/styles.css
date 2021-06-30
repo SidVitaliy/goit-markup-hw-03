@@ -274,6 +274,7 @@ body {
     margin-left: 30px;
     margin-top: 30px;
     flex-basis: calc( (100% - 90px) / 3);
+    
 }
 .activity-img{
     height: 294px;
@@ -357,6 +358,7 @@ body {
 
 .footer-logo{
     margin-bottom: 20px;
+    display: block;
 }
 
 .footer-logo-studio{
@@ -389,9 +391,11 @@ body {
     color: #FFFFFF;    
 }
 
-.location-link{
-    margin-top: 20px;
+.footer-address-list-link:not(:last-child){
+    margin-bottom: 9px;
+
 }
+
 
 .footer-address-desc:hover,
 .footer-address-desc:focus{
@@ -463,15 +467,15 @@ body {
     flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;
-   
-    
+}
 
+.img-link{
+    text-decoration: none;
 }
 
 .img-list-link{
     margin-top: 30px;
     margin-left: 30px;   
-   
     flex-basis: calc(100% / 3 - 30px);
    
 }
@@ -480,23 +484,22 @@ body {
     padding-top: 20px;
     padding-left: 24px;
     padding-bottom: 20px;
+    padding-right: 24px;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
+   
+    
      
 }
-
-.img-list-container:not(:last-child){
-    padding-right: 30px;
-}
-
-
 
 .img-link-title {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--link-title-text-color);
+    
+    
     
 }
 
@@ -507,6 +510,7 @@ body {
     letter-spacing: 0.03em;
     color: var(--desc-text-color);
     margin-top: 4px;
+    
     
 }
 /*=========Image Links END=============*/
